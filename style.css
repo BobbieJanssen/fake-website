@@ -103,37 +103,33 @@ nav li{
 }
 
 
-button{
+.signup{
     align-self: flex-start;
     width: 90px;
     height: fit-content;
     background-color: #3882F6;
-    border-radius: 8%;
     border-color: transparent;
     margin-top: 10px;
-    
-}
-
-.signup{
     color: white;
     padding: 5px 20px;
-    cursor: pointer;
-   
+    cursor: pointer;  
 }
 
-
 .sea {
-    
-    border-radius: 0%;  
+    flex: 1 1 auto;
+    border-radius: 0%;
+    display: grid;
+    overflow: hidden;
+    max-height: 200px;
+    max-width: 300px
 }
 
 
 
 /* mid section*/
 
-section{
+.first-section, .second-section{
     background-color: white;
-
     text-align: center;
     display: inline-flex;
     flex-direction: row;
@@ -174,7 +170,7 @@ figure{
     padding-right: 4px;
     width: min-content;
 }
-img{
+.seasea{
     border-radius: 10%;
     margin-bottom: 10px;
     width: 100px;
@@ -185,22 +181,84 @@ img{
     font-size: 10px;
 }
 
+/*Quote section*/
 
 .quote{
     background-color: #E5E7EB;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullquote{
+    margin:15%;
+    height: max-content;
+    width: 600px;
+}
+.inspiration{
     font-size: 20px;
-    height: 25vh;;
     font-weight: 100;
     color: #1F2937;
     text-align: center;
 }
 
-button{
-    color: #3882F6;
+.greybold{
+    display: flex;
+    width: max-content;
+    margin-left: 78%;
+    
 }
+
+/*Button section*/
+.actionblock{
+    height: 20vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #3882F6;
+    border-radius: 10px;
+    width: 700px ;
+    height: 90px;
+}
+
+.item1{
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-content: center;
+    color: white;
+    font-size:small
+}
+
+.item2{
+    height: fit-content;
+    border-radius: 8%;
+    border-color: white;
+    align-self: center;
+    color: white;
+    background-color: transparent;
+    padding: 5px 20px;
+    cursor: pointer;
+   
+    
+}
+
+/*Footer*/
 footer{
     background-color: #1F2937;
     padding: 10px 10px;
-    text-align: center;
-    color: #E5E7EB
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px
 }
